@@ -4,23 +4,7 @@
 	android:layout_height="fill_parent" android:padding="10dip">
 
 	<Button android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="Open Bluetooth"
-		android:onClick="onEnableButtonClicked" />
-
-	<Button android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="AS Clinet"
-		android:onClick="onOpenClientSocketButtonClicked" />
-
-	<Button android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="AS Server"
-		android:onClick="onOpenServerSocketButtonClicked" />
-
-	<Button android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="Just Search Device"
-		android:onClick="onStartDiscoveryButtonClicked" />
-		
-	<Button android:layout_width="fill_parent" 
-		android:layout_height="wrap_content" android:text="Close Bluetooth"
-		android:onClick="onDisableButtonClicked" />
+		android:layout_height="wrap_content" android:text="Search for Sensors"
+		android:onClick="onSearchSensorsClicked" />
 			
 </LinearLayout>

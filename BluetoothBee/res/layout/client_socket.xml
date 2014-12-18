@@ -8,14 +8,14 @@
 		android:layout_height="wrap_content"
 		android:layout_alignParentTop="true">
 	
-	<Button 
+	<Button
 		android:id="@+id/buttonSend"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content" 
 		android:text="Send"
 		android:onClick="onButtonClicksend" 
 		android:layout_alignParentRight="true">
-	>	
+		>
 	</Button>
 	
 	<EditText
@@ -40,18 +40,32 @@
         android:layout_below="@+id/sEditText" />
 </ScrollView>
 
-<Button
-    android:id="@+id/buttonLedOn"
-    android:layout_width="wrap_content"
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:onClick="onButtonLedOn" 
-    android:text="Led ON" />
+    android:orientation="vertical" >
 
-<Button
-    android:id="@+id/buttonLedOff"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:onClick="onButtonLedOff" 
-    android:text="Led Off" />
+    <TextView
+        android:id="@+id/textTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature [C]:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Humidity [%]"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Button
+        android:id="@+id/buttonTriggerSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onTriggerSensor"
+        android:text="Refresh" />
+
+</LinearLayout>
 
 </LinearLayout>
